@@ -207,6 +207,9 @@ body {
 	flex: 1 0 50px;
 	position: relative;
 }
+.summary-form__radio:focus + .summary-form__input-label::before {
+	outline: 1px solid red;
+}
 .summary-form__radio:checked + .summary-form__input-label::after {
 	transform: scale(1);
 }
