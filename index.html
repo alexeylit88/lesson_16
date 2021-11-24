@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson_16</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="wrapper">
+            <div class="appointment">
+                <div class="appointment__container">
+                    <form action="#" method="post" class="appointment-form appointment__body">
+                        <div class="appointment-form__title">Make an appointment</div>
+                        <div class="appointment-form__items">
+                            <div class="appointment-item">
+                                <input type="text" name="name" value="" placeholder="Name" autocomplete="off" required
+                                    class="appointment-item__field">
+                            </div>
+                            <div class="appointment-item">
+                                <input type="email" name="email" value="" placeholder="Email" autocomplete="off"
+                                    required class="appointment-item__field">
+                            </div>
+                            <div class="appointment-item">
+                                <input type="tel" name="tel" value="" placeholder="Phone Number" autocomplete="off"
+                                    required class="appointment-item__field">
+                            </div>
+                            <div class="appointment-item">
+                                <select name="service" class="appointment-item__field appointment-item__field_select">
+                                    <option value="null">Select Service</option>
+                                    <option value="vaccination">Vaccination</option>
+                                    <option value="graft">Graft</option>
+                                    <option value="therapy">Therapy</option>
+                                </select>
+                            </div>
+                            <div class="appointment-item appointment-item_textarea">
+                                <textarea name="about" class="appointment-item__field"
+                                    placeholder="Tell us about your puppers include his/her name"></textarea>
+                            </div>
+                        </div>
+                        <div class="appointment-item__button">
+                            <button type="submit" class="appointment-item__submit">Make an Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary__container">
+                    <form action="#" method="post" class="summary-form summary__body">
+                        <div class="summary-form__title">Summary</div>
+                        <div class="summary-form__sub-title">Estimate Shipping and Tax</div>
+                        <div class="summary-form__text">Enter your destination to get a shipping estimate.
+                        </div>
+                        <div class="summary-form__field">
+                            <label for="country" class="summary-form__label">Country</label>
+                            <select name="country" id="country" class="summary-form__row summary-form__country">
+                                <option value="Australia">Australia</option>
+                                <option value="USA">USA</option>
+                                <option value="Russia">Russia</option>
+                            </select>
+                        </div>
+                        <div class="summary-form__field">
+                            <label for="state" class="summary-form__label">State/Province</label>
+                            <input type="text" id="state" name="state" value="" autocomplete="off" required
+                                class="summary-form__row">
+                        </div>
+                        <div class="summary-form__field">
+                            <label for="zip" class="summary-form__label">Zip/Postal Code</label>
+                            <input type="number" id="zip" name="zip" value="" autocomplete="off" required
+                                class="summary-form__row">
+                        </div>
+                        <div class="summary-form__items">
+                            <div class="summary-form__item">
+                                <div class="summary-form__label">Standard Rate</div>
+                                <input type="radio" class="summary-form__radio" name="delivery" id="rate">
+                                <label for="rate" class="summary-form__input-label">Price may vary depending on the
+                                    item/destination. Shop Staff will contact you. $21.00</label>
+                            </div>
+                            <div class="summary-form__item">
+                                <div class="summary-form__label">Pickup from store</div>
+                                <input type="radio" class="summary-form__radio" name="delivery" id="pickup">
+                                <label for="pickup" class="summary-form__input-label">1234 Street Adress City Address,
+                                    1234 $0.00</label>
+                            </div>
+                        </div>
+                        <div class="summary-form__sub-title summary-form__sub-title_bottom">Apply Discount Code</div>
+                        <div class="summary-form__field summary-form__field_bottom">
+                            <label for="code" class="summary-form__label">Enter discount code</label>
+                            <input type="number" id="code" name="code" value="" autocomplete="off" required
+                                class="summary-form__row">
+                        </div>
+                        <div class="summary-form__button">
+                            <button type="submit" class="summary-form__submit">Apply Discount</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="registered">
+                <div class="registered__container">
+                    <form action="#" method="post" class="registered__form registered__body">
+                        <div class="registered__text">
+                            <div class="registered__title">Registered Customers</div>
+                            <div class="registered__sub-title">If you have an account, sign in with your email address.
+                            </div>
+                        </div>
+                        <div class="registered__items">
+                            <div class="registered__item">
+                                <label for="email" class="registered__label">Email</label>
+                                <input type="email" id="email" name="email" value="" autocomplete="off" required
+                                    placeholder="Your Email" class="registered__row">
+                            </div>
+                            <div class="registered__item">
+                                <label for="pass" class="registered__label">Password</label>
+                                <input type="password" id="pass" name="password" value="" autocomplete="off" required
+                                    placeholder="Your Password" class="registered__row">
+                            </div>
+                        </div>
+                        <div class="registered__bottom">
+                            <button type="submit" class="registered__submit">Sign In</button>
+                            <a href="#" class="registered__link">Forgot Your Password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
