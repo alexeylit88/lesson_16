@@ -120,6 +120,7 @@ body {
 .appointment-item_textarea {
 	flex: 1 1 100%;
 	min-height: 180px;
+	resize: vertical;
 }
 .appointment-item__button {
 	align-self: flex-end;
